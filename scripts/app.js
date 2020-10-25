@@ -18,7 +18,7 @@ function enableBtn() {
 
 }
 
-var myQuestions = [
+let myQuestions = [
     {
         question: "What is 10/2?",
         answers: {
@@ -31,11 +31,11 @@ var myQuestions = [
     {
         question: "What is 30 * 30 + 2?",
         answers: {
-            a: '390',
+            a: '902',
             b: '900',
-            c: '902'
+            c: '390'
         },
-        correctAnswer: 'c'
+        correctAnswer: 'a'
     },
     {
         question: "Who invented JavaScript?",
@@ -74,8 +74,8 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton) 
 
     function showQuestions(questions, quizContainer) {
         // we'll need a place to store the output and the answer choices
-        var output = [];
-        var answers;
+        let output = [];
+        let answers;
 
         // for each question...
         for (var i = 0; i < questions.length; i++) {

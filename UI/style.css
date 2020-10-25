@@ -27,13 +27,15 @@ h2 {
 
 #submit {
   margin-top: 10px;
+  margin-bottom: 8px;
   cursor: pointer;
-  margin-left: 100px;
   font-size: 18px;
 }
 
 .results {
   font-size: 20px;
+  text-align: center;
 }
+
 @media screen and(max-width: 600px) {
 }
