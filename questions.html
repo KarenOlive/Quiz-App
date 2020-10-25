@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <p id="test">"This paragraph contains some <code>HTML </code>code!"</p> 
+      <button onclick="innerTextFn()">InnerText</button>
+     <button onclick="innerHTMLFn()">InnerHTML</button>
+
+    <input type="button" value="Go to new location" onclick="redirect()" />
+    <script>
+      //number 5
+      const profile ={
+        name: 'Grace',
+        country: 'Uganda',
+        city: 'Kampala',
+        phoneNumber: 0777123456,
+        age : function (currentYear, dob) {
+          return currentYear - dob;
+        }
+        
+      };
+      let x = profile.age(2020, 1999)
+      console.log(x);
+
+      //number 6
+      let array=[];
+      array.push('React', 'Angular', 'Vue');
+      console.log(array);
+
+      //number 7
+      var names = ["John","Mon",2,true];
+      console.log(names instanceof String); //false
+      console.log(names instanceof Number); // false
+      console.log(names instanceof Object); //true
+      console.log(names instanceof Array); // true
+
+
+      //number 8
+      function  Add (){
+          console.log(answer);
+          var answer = 2
+          };
+          Add();
+  
+
+          //number 9
+      const addAndPrint = (a, b) => a + b;
+      console.log(addAndPrint(5, 5));
+      console.log(addAndPrint(5, 5));
+      console.log(addAndPrint(5, 8));
+      console.log(addAndPrint(6, 5));
+
+          //number 10
+      // export { myNumbers, myLogger, Alligator };
+
+      // import { myLogger, Alligator } from "app.js";
+
+        //number 11
+        function redirect() {
+          location.href = "../UI/index.html";
+        }
+
+        //number 12
+    // let john = { name: "John" };
+
+    // let weakMap = new WeakMap();
+    // weakMap.set(john, "...");
+
+    // john = null; // overwrite the reference
+
+    // john is removed from memory!
+
+    let john = { name: "John" };
+
+    let map = new Map();
+    map.set(john, "...");
+
+    john = null; // overwrite the reference
+
+    // john is stored inside the map,
+    // we can get it by using map.keys()
+
+    
+  //number 13  
+    
+    // Stack class 
+    class Stack { 
+      
+      // Array is used to implement stack 
+      constructor() 
+      { 
+          this.items = []; 
+      } 
+       // Functions to be implemented 
+      // push(item) 
+      // pop() 
+       
+      push(element) 
+      { 
+        // push element into the items 
+        this.items.push(element); 
+      } 
+      pop() 
+      { 
+        // return top most element in the stack 
+        // and removes it from the stack 
+        // Underflow if stack is empty 
+        if (this.items.length == 0) 
+            return "Underflow"; 
+        return this.items.pop(); 
+      } 
+
+     
+    } 
+    // creating object for stack class 
+    var stack = new Stack();
+    console.log(stack.pop());
+    // Adding element to the stack 
+    stack.push(10); 
+    stack.push(20); 
+    stack.push(30);
+    // console.log(stack.printStack()); 
+    console.log(stack.pop());
+
+
+//number 16
+function innerTextFn() { 
+            var x = document.getElementById('test'); 
+            alert(x.innerText); //will encode and decode the HTML and show just plain text
+        } 
+  
+        function innerHTMLFn() { 
+            var x = document.getElementById('test'); 
+            alert(x.innerHTML); // will show the HTML in it's format as well
+        } 
+
+
+        //number 18
+        //create a cookie
+        document.cookie = "cookie1=I am a cookie!";
+        //to delete a cookie
+        document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+    </script>
+  </body>
+</html>

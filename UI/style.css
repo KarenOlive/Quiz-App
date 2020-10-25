@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  padding: 10px;
+}
+.wrapper {
+  box-shadow: 2px 2px 2px #444;
+  border-radius: 6px;
+  border: 1px solid #eee;
+  padding: 10px;
+  background-color: #eee;
+  margin-bottom: 10px;
+}
+
+.lead {
+  margin-top: 10px;
+  font-size: 30px;
+}
+.form-check {
+  margin: 5px;
+  font-size: 20px;
+}
+
+#submit {
+  margin-top: 10px;
+  cursor: pointer;
+  margin-left: 100px;
+  font-size: 18px;
+}
+
+.results {
+  font-size: 20px;
+}
+@media screen and(max-width: 600px) {
+}
